@@ -1,0 +1,4 @@
+#---------------------------------------------------
+# This file is Juju managed
+#---------------------------------------------------
+command[check_webservice]=/usr/lib/nagios/plugins/check_http --hostname {{ verify_hostname }} --port {{ port }} --url '{{ verify_path }}' --expect '{{ verify_status }}' --string '{{ verify_content }}'

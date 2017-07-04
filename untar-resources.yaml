@@ -1,0 +1,4 @@
+resources:
+    build:
+        username: wsgi
+        destination_path: /srv

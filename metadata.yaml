@@ -1,0 +1,19 @@
+name: "wsgi-app"
+summary: "A charm for hosting the webteam's Python projects"
+maintainer: "Canonical Webteam <webteam@canonical.com>"
+description: "A charm for hosting the webteam's Python projects"
+series:
+    - xenial
+tags:
+    - python
+    - webservice
+provides:
+    verify:
+        interface: nrpe-external-master
+        scope: container
+resources:
+    build:
+        type: file
+        filename: build.tar.gz
+        description: "A tarball containing the application code"
+

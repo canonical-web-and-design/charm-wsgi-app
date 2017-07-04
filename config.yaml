@@ -1,0 +1,24 @@
+options:
+  # New config options
+  verify_hostname:
+      type: string
+      default: "localhost"
+      description: The hostname to use when checking the webservice
+  verify_path:
+      type: string
+      default: "/"
+      description: The URL path to check to verify the webservice
+  verify_content:
+      type: string
+      default: ""
+      description: Content to check for in the webservice response
+  verify_status:
+      type: string
+      default: "200 OK"
+      description: The HTTP status to expect when checking the webservice
+
+  # Defaults for WSGI layer config options
+  wsgi_module:
+    default: "webapp.wsgi:application"
+  provision_command:
+    default: "python3 manage.py migrate"
