@@ -1,2 +1,2 @@
 includes: ['layer:basic', 'layer:wsgi', 'layer:untar-resources']
-repo: git@github.com:canonical-webteam/wsgi-app.git
+repo: git@github.com:canonical-webteam/charm-wsgi-app.git
